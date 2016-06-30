@@ -47,7 +47,7 @@ template <typename E>
 void SingleLinkedList<E>::add_first(E element)
 {
 	head = new Node<E>(element, head);
-	if (size == 0)
+	if (current_size == 0)
 	{
 		tail = head;
 	}
@@ -78,9 +78,11 @@ E SingleLinkedList<E>::remove_first()
 		throw EMPTY_LIST_EXCEPTION;
 	}
 	Node<E>* nodo_auxiliar = head;
+	E removed_element = nodo_auxiliar->get_element();
 	head = head->get_next();
 	current_size--;
-	return nodo_auxiliar->get_element();
+	delete nodo_auxiliar;
+	return removed_element;
 }
 
 #endif /* end of include guard: _SINGLE_LINKED_LIST_CPP_ */
