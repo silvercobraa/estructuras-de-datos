@@ -33,6 +33,8 @@ public:
 	 * Crea una lista ligada simple vacía.
 	 */
 	SingleLinkedList();
+	
+	~SingleLinkedList();
 
 	/**
 	 * Retorna la cantidad de elementos en esta lista.

@@ -12,16 +12,27 @@ SingleLinkedList<E>::SingleLinkedList()
 }
 
 template <typename E>
+SingleLinkedList<E>::~SingleLinkedList()
+{
+	while (!is_empty()) {
+		this->remove_first();
+	}
+}
+
+
+template <typename E>
 int SingleLinkedList<E>::size()
 {
 	return this->current_size;
 }
+
 
 template <typename E>
 bool SingleLinkedList<E>::is_empty()
 {
 	return current_size == 0;
 }
+
 
 template <typename E>
 E SingleLinkedList<E>::first()
@@ -33,6 +44,7 @@ E SingleLinkedList<E>::first()
 	return head->get_element();
 }
 
+
 template <typename E>
 E SingleLinkedList<E>::last()
 {
@@ -42,6 +54,7 @@ E SingleLinkedList<E>::last()
 	}
 	return tail->get_element();
 }
+
 
 template <typename E>
 void SingleLinkedList<E>::add_first(E element)
@@ -53,6 +66,7 @@ void SingleLinkedList<E>::add_first(E element)
 	}
 	current_size++;
 }
+
 
 template <typename E>
 void SingleLinkedList<E>::add_last(E element)
@@ -69,6 +83,7 @@ void SingleLinkedList<E>::add_last(E element)
 	}
 	current_size++;
 }
+
 
 template <typename E>
 E SingleLinkedList<E>::remove_first()
