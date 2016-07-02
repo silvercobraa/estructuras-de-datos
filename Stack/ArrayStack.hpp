@@ -14,7 +14,7 @@ private:
 public:
     static const int CAPACITY = 1000;
     static const int EMPTY_STACK_EXCEPTION = -1;
-    static const int FULL_STACK_EXCEPTION = -1;
+    static const int FULL_STACK_EXCEPTION = -2;
 
 	ArrayStack();
     ArrayStack(int cap);
