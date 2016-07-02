@@ -1,9 +1,10 @@
 #include <iostream>
 #include "ArrayStack.hpp"
+#include "LinkedStack.hpp"
 
 int main(int argc, char const *argv[])
 {
-	Stack<int>* s = new ArrayStack<int>();
+	Stack<int>* s = new LinkedStack<int>();
 	s->push(1);
 	s->push(2);
 	s->push(3);
