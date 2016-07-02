@@ -23,9 +23,9 @@ public:
 
 	int size();
 	bool is_empty();
-	void push(E element);
-	E top();
-	E pop();
+	void enqueue(E element);
+	E first();
+	E dequeue();
 };
 
 #include "ArrayQueue.cpp"
