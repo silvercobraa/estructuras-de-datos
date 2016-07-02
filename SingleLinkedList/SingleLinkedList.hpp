@@ -1,6 +1,8 @@
 #ifndef _SINGLE_LINKED_LIST_HPP_
 #define _SINGLE_LINKED_LIST_HPP_
 
+#include "Node.hpp"
+
 /**
  * Lista ligada simple. Cada nodo contiene referencias al nodo siguiente.
  */
