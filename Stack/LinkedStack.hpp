@@ -1,6 +1,7 @@
 #ifndef _LINKED_STACK_HPP_
 #define _LINKED_STACK_HPP_
 
+#include "Stack.hpp"
 #include "../SingleLinkedList/SingleLinkedList.hpp"
 
 template <typename E>
