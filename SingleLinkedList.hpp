@@ -1,8 +1,6 @@
 #ifndef _SINGLE_LINKED_LIST_HPP_
 #define _SINGLE_LINKED_LIST_HPP_
 
-#include "Node.hpp"
-
 /**
  * Lista ligada simple. Cada nodo contiene referencias al nodo siguiente.
  */
@@ -33,7 +31,7 @@ public:
 	 * Crea una lista ligada simple vacía.
 	 */
 	SingleLinkedList();
-	
+
 	~SingleLinkedList();
 
 	/**
@@ -79,6 +77,6 @@ public:
 	E remove_first();
 };
 
-#include "SingleLinkedList.hpp"
+#include "SingleLinkedList.cpp"
 
 #endif /* end of include guard: _SINGLE_LINKED_LIST_HPP_ */
