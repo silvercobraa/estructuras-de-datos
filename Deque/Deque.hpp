@@ -1,5 +1,5 @@
-#ifndef _DEQUE_
-#define _DEQUE_
+#ifndef _DEQUE_HPP_
+#define _DEQUE_HPP_
 
 template <typename E>
 class Deque
@@ -58,4 +58,4 @@ public:
 	virtual E remove_last() = 0;
 };
 
-#endif /* end of include guard: _DEQUE_ */
+#endif /* end of include guard: _DEQUE_HPP_ */
